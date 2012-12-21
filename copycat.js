@@ -1,4 +1,4 @@
-/*jslint plusplus: true */
+/*jslint plusplus: true, indent: 4, maxlen: 80 */
 /**
  * Overcomes JavaScript's behaviour of only passing references instead of
  * creating copies for objects, functions and arrays.
@@ -20,7 +20,7 @@ var copyCat = function copyCat(input) {
         i;
 
     if (typeof input === "object" && input !== null) {
-        if (Object.prototype.toString.call(input) === "[object Array]") { // array
+        if (Object.prototype.toString.call(input) === "[object Array]") {
             output = [];
 
             i = input.length;
